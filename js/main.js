@@ -13,6 +13,14 @@ Gumby.ready(function() {
 		$(this).trigger('gumby.trigger');
 	});
 
+	// show random background
+	var num = Math.floor((Math.random() * 18) + 1);	
+	if (num < 10) {
+		num = '0' + num.toString();
+	}
+	var img = 'http://2015.notrollsallowed.com/img/background-0' + num + '.jpg';
+	$('body').css('background-image', 'url('+img+')');
+
 // Oldie document loaded
 }).oldie(function() {
 	Gumby.warn("This is an oldie browser...");

@@ -6,7 +6,7 @@
   min-height: 60px;
   display: block;
   margin-bottom: 20px;
-  background: $navbar-color; // Change this color in settings to change the navbar color
+  background: transparent; //$navbar-color; // Change this color in settings to change the navbar color
   position: relative;
   @include respond(all-phones) {
     border: none;

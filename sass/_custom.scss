@@ -1,5 +1,14 @@
-// Your custom SCSS should be written here...
 body {
-    background: url('../img/background.jpg');
     background-size: cover;
+}
+
+.box {
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: inline;
+    @include opacity(0.6);
+}
+
+.logo {
+    @include opacity(0.6);
 }
