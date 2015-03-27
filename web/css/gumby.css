@@ -1688,6 +1688,6 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 body { background-size: cover; }
 
-.box { background-color: #fff; margin-bottom: 20px; display: inline; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
+.box { background-color: #fff; margin-bottom: 20px; display: inline; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 
-.logo { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
+.logo { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
