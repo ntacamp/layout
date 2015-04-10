@@ -26,9 +26,24 @@ time, mark, audio, video {
 .schedule .track h2 {
   background: none repeat scroll 0 0 #22a7f0;
   color: #fff;
+  margin: 0;
   font-size: 20px;
   height: 30px;
   line-height: 30px;
   text-align: center; }
+.schedule .track .events {
+  background: #EEEEEE;
+  text-align: center;
+  margin: 0;
+  padding: 2em 0; }
+  .schedule .track .events .avatar {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 4px solid transparent;
+    transition: all 0.5s; }
+    .schedule .track .events .avatar:hover {
+      border: 4px solid #FCAC45; }
 
 /*# sourceMappingURL=schedule.css.map */
