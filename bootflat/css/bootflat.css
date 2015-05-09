@@ -2577,6 +2577,30 @@ body {
   background-color: #F2F1EF;
 }
 
+.page {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.page aside .block {
+  margin-bottom: 35px;
+}
+.page aside .block ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.page aside .block.sponsors ul li {
+  margin-bottom: 30px;
+}
+.page aside .block.feed img {
+  display: block;
+}
+.page aside .block.feed ul li {
+  border-bottom: 1px solid #E6E9ED;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 .btn-register {
   font-size: 36px;
   padding-left: 40px;
@@ -2594,16 +2618,16 @@ body {
   font-size: 24px;
 }
 
-.sponsors {
+body > .sponsors {
   padding-top: 50px;
   background-color: #FFF;
   margin-bottom: 2px;
 }
-.sponsors h2 {
+body > .sponsors h2 {
   margin-bottom: 35px;
   margin-top: 10px;
 }
-.sponsors .container {
+body > .sponsors .container {
   padding-bottom: 70px;
 }
 
