@@ -238,10 +238,17 @@ module.exports = function(grunt) {
         replacement: grunt.option('newver'),
         recursive: true
       }
+    },
+    watch: {
+      css: {
+        files: 'bootflat/scss/*',
+        tasks: ['sass:dist']
+      }
     }
-
   });
 
+
+  grunt.loadNpmTasks('grunt-contrib-watch');
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
 
@@ -256,6 +263,7 @@ module.exports = function(grunt) {
   grunt.registerTask('check-css', ['csslint']);
   grunt.registerTask('check-html', ['validation']);
   grunt.registerTask('check-js', ['jshint']);
+  grunt.registerTask('compass', ['compass']);
 
   // Version numbering task.
   // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
