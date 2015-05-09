@@ -28,6 +28,17 @@ $navbar-link-color:                          $white; //darken($navbar-background
           border-color: $navbar-background-color;
           @include opacity($opacity: 95, $filter: true);
       }
+      & .navbar-brand {
+        font-size: 24px;
+
+        & img {
+          height: 51px;
+          margin-top: -15px;
+          float: left;
+          margin-right: 15px;
+        }
+      }
+
       & .navbar-brand,
       & .navbar-link,
       & .btn-link {

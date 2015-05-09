@@ -1628,6 +1628,15 @@ blockquote {
   opacity: 0.95;
   filter: alpha(opacity=95);
 }
+.navbar-default .navbar-brand {
+  font-size: 24px;
+}
+.navbar-default .navbar-brand img {
+  height: 51px;
+  margin-top: -15px;
+  float: left;
+  margin-right: 15px;
+}
 .navbar-default .navbar-brand, .navbar-default .navbar-link, .navbar-default .btn-link {
   color: #FFF;
 }
