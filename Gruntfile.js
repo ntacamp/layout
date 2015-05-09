@@ -241,7 +241,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: 'bootflat/scss/*',
+        files: ['bootflat/scss/*','bootflat/scss/bootflat/*'],
         tasks: ['sass:dist']
       }
     }
