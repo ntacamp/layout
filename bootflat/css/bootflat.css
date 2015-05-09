@@ -20,7 +20,7 @@
  * --------------------------------------------------
  */
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #434A54;
   background-color: #FFF;
 }
@@ -2059,6 +2059,11 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 0px;
+}
+.jumbotron .btn {
+  font-size: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media screen and (min-width: 768px) {
   .jumbotron, .container .jumbotron {
