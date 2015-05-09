@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         options: {
           banner: '<%= banner %>',
           style: 'expanded',
-          sourcemap: 'true'
+          sourcemap: false
         }
       }
     },
@@ -241,8 +241,19 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
+        options: {
+          livereload: true // port 35729
+        },
         files: ['bootflat/scss/*','bootflat/scss/bootflat/*'],
-        tasks: ['sass:dist']
+        tasks: ['sass:dist'],
+      },
+      html: {
+        options: {
+          livereload: true // port 35729
+        },
+        files: [
+          '*.html'
+        ]
       }
     }
   });
