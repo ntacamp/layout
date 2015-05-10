@@ -24,6 +24,7 @@ $navbar-link-color:                          $white; //darken($navbar-background
 
   .navbar-default {
       & {
+          float: right;
           background-color: $navbar-background-color;
           border-color: $navbar-background-color;
           @include opacity($opacity: 95, $filter: true);
@@ -102,6 +103,10 @@ $navbar-link-color:                          $white; //darken($navbar-background
       }
 
       @media (max-width: 767px) {
+          & {
+            float: none;
+          }
+
           & .navbar-nav > li > a:hover,
           & .navbar-nav > li > a:focus {
               background-color: $navbar-background-color-active;
@@ -197,6 +202,7 @@ $navbar-link-color:                          $white; //darken($navbar-background
       }
 
       @media (max-width: 767px) {
+
           & .navbar-nav > li > a:hover,
           & .navbar-nav > li > a:focus {
               background-color: $navbar-inverse-background-color;

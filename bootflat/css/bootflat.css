@@ -1623,6 +1623,7 @@ blockquote {
 }
 
 .navbar-default {
+  float: right;
   background-color: #DA4453;
   border-color: #DA4453;
   opacity: 0.95;
@@ -1677,6 +1678,9 @@ blockquote {
   background-color: #DA4453;
 }
 @media (max-width: 767px) {
+  .navbar-default {
+    float: none;
+  }
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     background-color: #ED5565;
   }
@@ -1992,7 +1996,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
  * --------------------------------------------------
  */
 .jumbotron {
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2001,13 +2005,16 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 720px;
+  height: auto;
   overflow: hidden;
 }
 .container .jumbotron {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.jumbotron .container {
+  padding-top: 20px;
 }
 .jumbotron > .jumbotron-photo img {
   -webkit-border-radius: 0 0 0 0;
@@ -2016,17 +2023,14 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   width: 100%;
 }
 .jumbotron .jumbotron-contents {
-  padding: 20px;
+  padding: 0px;
   color: #434A54;
   position: relative;
   z-index: 9;
 }
-.jumbotron .jumbotron-contents .container {
-  margin-top: 60px;
-}
 .jumbotron .carousel {
-  height: 720px;
-  margin-bottom: -720px;
+  height: auto;
+  margin-bottom: auto;
 }
 .jumbotron .carousel, .jumbotron .carousel-inner, .jumbotron .carousel-inner > .item.active img {
   -webkit-border-radius: 0 0 0 0;
@@ -2051,31 +2055,52 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   font-weight: 400;
 }
 .jumbotron h1, .jumbotron .h1 {
-  font-size: 72px;
+  font-size: 48px;
 }
 .jumbotron h2, .jumbotron .h2 {
-  font-size: 36px;
+  font-size: 24px;
 }
 .jumbotron p {
-  font-size: 24px;
+  font-size: 14px;
 }
 .jumbotron h1, .jumbotron h2, .jumbotron p {
   background-color: #FFF;
   opacity: 0.85;
   filter: alpha(opacity=85);
-  float: left;
-  clear: left;
-  padding: 10px;
+  text-align: center;
   margin-bottom: 10px;
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
+  .jumbotron {
+    height: 720px;
+  }
+  .jumbotron .carousel {
+    height: 720px;
+    margin-bottom: -720px;
+  }
+  .jumbotron .jumbotron-contents {
+    padding: 50px;
+  }
   .jumbotron, .container .jumbotron {
     padding: 0;
+    margin-top: 55px;
   }
-  .jumbotron h1, .jumbotron .h1 {
+  .jumbotron h1 {
     font-size: 72px;
-    font-weight: 800;
+    font-weight: 400;
+  }
+  .jumbotron h2 {
+    font-size: 48px;
+  }
+  .jumbotron p {
+    font-size: 24px;
+  }
+  .jumbotron h1, .jumbotron h2, .jumbotron p {
+    float: left;
+    clear: left;
+    padding: 10px;
+    text-align: left;
   }
 }
 
@@ -2292,7 +2317,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .footer-logo {
   margin-top: -5px;
-  height: 32px;
+  height: auto;
   line-height: 32px;
 }
 .footer-logo img {
@@ -2635,20 +2660,54 @@ body {
 }
 
 .btn-register {
-  font-size: 36px;
-  padding-left: 40px;
-  padding-right: 40px;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .btn-register {
+    font-size: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .event-details {
   min-height: 300px;
   padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 2px;
 }
-.event-details .container {
-  margin-bottom: 100px;
+.event-details.what {
+  background-color: #264348;
+  color: #FFF;
+}
+.event-details.what .text-muted {
+  color: #F5F7FA;
+}
+.event-details.where {
+  background-color: #ecfbf5;
+}
+.event-details.when {
+  background-color: #F5F7FA;
+}
+.event-details .cta {
+  margin-top: 20px;
+}
+.event-details h1 {
+  margin-top: 0;
 }
 .event-details .container p {
-  font-size: 24px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .event-details {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .event-details .container p {
+    font-size: 24px;
+  }
 }
 
 body > .sponsors {

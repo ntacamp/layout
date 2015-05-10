@@ -19,17 +19,21 @@ $jumbotron-height:                $block-height;
    * --------------------------------------------------
    */
   .jumbotron {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     padding: 0;
     @include radius($type: border-radius, $value: $jumbotron-radius);
     background-color: $jumbotron-background-color;
     @include box-shadow($value: $jumbotron-shadow);
 
-    height: $jumbotron-height;
+    height: auto;
     overflow: hidden;
 
     @at-root .container & {
       @include radius($type: border-radius, $value: $jumbotron-radius);      
+    }
+
+    & .container {
+      padding-top: 20px;
     }
 
     & > &-photo img {
@@ -38,19 +42,15 @@ $jumbotron-height:                $block-height;
     }
 
     & &-contents {
-      padding: 20px;
+      padding: 0px;
       color: $jumbotron-font-color;
       position: relative;
       z-index: 9;
-
-      .container {
-        margin-top: 60px;
-      }
     }
 
     & .carousel {
-        height: $jumbotron-height;
-        margin-bottom: -$jumbotron-height;
+        height: auto;
+        margin-bottom: auto;
     }
     & .carousel,
     & .carousel-inner,
@@ -74,34 +74,60 @@ $jumbotron-height:                $block-height;
     }
 
     & h1, & .h1 {
-      font-size: 72px;
+      font-size: 48px;
     }
     & h2, & .h2 {
-      font-size: 36px;
+      font-size: 24px;
     }
     & p {
-      font-size: 24px;
+      font-size: 14px;
     }
 
     & h1, & h2, & p {
       background-color: $white;
       @include opacity($opacity: 85, $filter: true);
-      float: left;
-      clear: left;
-      padding: 10px;
+      text-align: center;
       margin-bottom: 10px;
       margin-top: 0px;
     }
 
     @media screen and (min-width: 768px) {
+      & {
+        height: $jumbotron-height;
+        & .carousel {
+            height: $jumbotron-height;
+            margin-bottom: -$jumbotron-height;
+        }
+      }
+
+      & &-contents {
+        padding: 50px;
+      }
+
       &,
       .container & {
         padding: 0;
+        margin-top: 55px;
       }
-      & h1,
-      & .h1 {
+
+      & h1 {
         font-size: 72px;
-        font-weight: 800;
+        font-weight: 400;
+      }
+
+      & h2 {
+        font-size: 48px;
+      }
+
+      & p {
+        font-size: 24px;
+      }
+
+      & h1, & h2, & p {
+        float: left;
+        clear: left;
+        padding: 10px;
+        text-align: left;
       }
     }
   }

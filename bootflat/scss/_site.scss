@@ -1,3 +1,7 @@
+$lynch:                #6C7A89;
+$indigo-color:         #264348;
+$jungle-green:         #26C281;
+
 body {
     margin-top: 53px;
     background-color: #F2F1EF;
@@ -40,19 +44,64 @@ body {
 }
 
 .btn-register {
-  font-size: 36px;
-  padding-left: 40px;
-  padding-right: 40px;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+    @media screen and (min-width: 768px) {
+        & {
+            font-size: 36px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
 }
+
 
 .event-details {
     min-height: 300px;
     padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 2px;
+
+    &.what {
+        background-color: $indigo-color;
+        color: $white;
+
+        & .text-muted {
+            color: $lightgray-light;
+        }
+    }
+
+    &.where {
+        background-color: lighten($jungle-green, 50%);
+    }
+
+    &.when {
+        background-color: $lightgray-light;
+    }
+
+    & .cta {
+        margin-top: 20px;
+    }
+
+    & h1 {
+        margin-top: 0;
+    }
 
     & .container {
-        margin-bottom: 100px;
-
         & p {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        & {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        & .container p {
             font-size: 24px;
         }
     }
