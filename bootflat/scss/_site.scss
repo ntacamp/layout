@@ -20,7 +20,8 @@ body {
             margin-bottom: 30px;
         }
 
-        &.feed {
+        &.feed,
+        &.blog {
             img {
                 display: block;
             }

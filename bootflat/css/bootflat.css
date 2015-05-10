@@ -2622,10 +2622,10 @@ body {
 .page aside .block.sponsors ul li {
   margin-bottom: 30px;
 }
-.page aside .block.feed img {
+.page aside .block.feed img, .page aside .block.blog img {
   display: block;
 }
-.page aside .block.feed ul li {
+.page aside .block.feed ul li, .page aside .block.blog ul li {
   border-bottom: 1px solid #E6E9ED;
   margin-bottom: 10px;
   padding-bottom: 10px;
