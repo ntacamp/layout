@@ -7,6 +7,10 @@ body {
     font-size: 14px;
     margin-bottom: 50px;
 
+    & h1 {
+        margin-bottom: 50px;
+    }
+
     & aside .block {
         margin-bottom: 35px;
 

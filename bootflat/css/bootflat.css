@@ -50,7 +50,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.1;
   color: inherit;
 }
@@ -2609,6 +2609,9 @@ body {
 
 .page {
   font-size: 14px;
+  margin-bottom: 50px;
+}
+.page h1 {
   margin-bottom: 50px;
 }
 .page aside .block {
