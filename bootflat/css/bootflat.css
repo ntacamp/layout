@@ -2032,6 +2032,9 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   height: auto;
   margin-bottom: auto;
 }
+.jumbotron .carousel .left, .jumbotron .carousel .right {
+  z-index: 10;
+}
 .jumbotron .carousel, .jumbotron .carousel-inner, .jumbotron .carousel-inner > .item.active img {
   -webkit-border-radius: 0 0 0 0;
   -moz-border-radius: 0 0 0 0;
@@ -2674,8 +2677,8 @@ body {
 
 .event-details {
   min-height: 300px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 2px;
 }
 .event-details.what {
@@ -2702,8 +2705,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .event-details {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .event-details .container p {
     font-size: 24px;

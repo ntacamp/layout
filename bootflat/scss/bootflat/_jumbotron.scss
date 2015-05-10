@@ -51,6 +51,11 @@ $jumbotron-height:                $block-height;
     & .carousel {
         height: auto;
         margin-bottom: auto;
+
+        & .left, 
+        & .right {
+          z-index: 10;
+        }
     }
     & .carousel,
     & .carousel-inner,

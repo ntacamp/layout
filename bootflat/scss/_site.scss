@@ -60,8 +60,8 @@ body {
 
 .event-details {
     min-height: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 2px;
 
     &.what {
@@ -97,8 +97,8 @@ body {
 
     @media screen and (min-width: 768px) {
         & {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
         
         & .container p {
