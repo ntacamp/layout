@@ -3,13 +3,16 @@
 
 ### Tools you will need
 
-    # Install Node.js
-    [install wiki](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
+**Node.js**
 
-    # Install Grunt
+How to install Node.js check official [wiki](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
+
+**Grunt**
+
     npm install grunt-cli -g
 
-    # Install Compass
+**Compass**
+
     gem install compass
 
 
