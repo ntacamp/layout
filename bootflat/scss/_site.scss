@@ -8,11 +8,12 @@ body {
 }
 
 .page {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 150%;
     margin-bottom: 50px;
 
     & h1 {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     & aside .block {
@@ -91,7 +92,7 @@ body {
 
     & .container {
         & p {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 
@@ -102,7 +103,7 @@ body {
         }
         
         & .container p {
-            font-size: 24px;
+            font-size: 18px;
         }
     }
 }

@@ -85,30 +85,32 @@ $image-radius:               4px !default;
   h6 {
     font-weight: normal;
   }
+  
   h1,
   .h1 {
-    font-size: 51px;
+    font-size: 36px;
   }
   h2,
   .h2 {
-    font-size: 43px;
+    font-size: 24px;
   }
   h3,
   .h3 {
-    font-size: 30px;
+    font-size: 18px;
   }
   h4,
   .h4 {
-    font-size: 19px;
+    font-size: 16px;
   }
   h5,
   .h5 {
-    font-size: 18px;
+    font-size: 14px;
   }
   h6,
   .h6 {
-    font-size: 14px;
+    font-size: 12px;
   }
+  
   blockquote {
     border-left: 3px solid $blockquote-border-color;
   }
@@ -122,6 +124,32 @@ $image-radius:               4px !default;
     margin: 24px 0;
   }
 
+  @media screen and (min-width: 768px) {
+    h1,
+    .h1 {
+      font-size: 51px;
+    }
+    h2,
+    .h2 {
+      font-size: 43px;
+    }
+    h3,
+    .h3 {
+      font-size: 30px;
+    }
+    h4,
+    .h4 {
+      font-size: 19px;
+    }
+    h5,
+    .h5 {
+      font-size: 18px;
+    }
+    h6,
+    .h6 {
+      font-size: 14px;
+    }
+  }
 }
 
 
