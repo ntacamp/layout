@@ -57,31 +57,24 @@ Then use
 
 ## TODO
 
-### Homepage: Slider
-1. Prepare images for slider. Crop in proper composition.
-2. Add overlay on top of slider images with repeated background image 'bootflat/img/bg-dots.png'.
-
-
-### Homepage: Where?
-1. Needs awesome icon instead of plain tree.
-
-### Homepage: When?
-1. Needs awesome illustration
-
-### Homepage: Organizeres
-1. Needs awesome illustration
-
-### Page: #ntacamp feed
-1. Better styling for text and image content
-
-### Page: BLOG feed
-1. Better styling for text and image content
-
-### FAQ
-1. Page layout
-
-### Schedule
-1. Page layout
-
-### Location
-1. Page layout with nicely integrated google map
+- Homepage: Slider
+    1. Prepare images for slider. Crop in proper composition.
+    2. Add overlay on top of slider images with repeated background image 'bootflat/img/bg-dots.png'.
+- Homepage: Where?
+    1. Needs awesome icon instead of plain tree.
+- Homepage: When?
+    1. Needs awesome illustration
+- Homepage: Organizeres
+    1. Needs awesome illustration
+- Page: #ntacamp feed
+    1. Better styling for text and image content
+- Page: BLOG feed
+    1. Better styling for text and image content
+- FAQ
+    ~~1. Page layout~~ DONE.
+- Contact
+    ~~1. Page layout~~ DONE.
+- Location
+    1. Page layout with nicely integrated google map
+- Schedule
+    1. Page layout
