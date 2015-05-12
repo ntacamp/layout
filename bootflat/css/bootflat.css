@@ -95,7 +95,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 h3,
@@ -138,27 +138,27 @@ blockquote {
 @media screen and (min-width: 768px) {
   h1,
   .h1 {
-    font-size: 51px;
+    font-size: 48px;
   }
 
   h2,
   .h2 {
-    font-size: 43px;
+    font-size: 24px;
   }
 
   h3,
   .h3 {
-    font-size: 30px;
+    font-size: 21px;
   }
 
   h4,
   .h4 {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   h5,
   .h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h6,
@@ -2665,6 +2665,26 @@ body {
   margin-top: 53px;
   background-color: #F2F1EF;
 }
+body.home h1 {
+  font-size: 36px;
+}
+body.home h2 {
+  font-size: 24px;
+}
+body.home h3 {
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  body.home h1 {
+    font-size: 51px;
+  }
+  body.home h2 {
+    font-size: 43px;
+  }
+  body.home h3 {
+    font-size: 30px;
+  }
+}
 
 .page {
   font-size: 16px;
@@ -2673,6 +2693,10 @@ body {
 }
 .page h1 {
   margin-bottom: 20px;
+}
+.page h2 {
+  padding-top: 50px;
+  margin-top: 0;
 }
 .page aside .block {
   margin-bottom: 35px;
