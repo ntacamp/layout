@@ -1,6 +1,7 @@
 $lynch:                #6C7A89;
 $indigo-color:         #264348;
 $jungle-green:         #26C281;
+$border-grey:          #CCC;
 
 body {
     margin-top: 53px;
@@ -45,6 +46,14 @@ body {
         // fixes anchor links hidding behind navbar
         padding-top: 50px;
         margin-top: 0;
+    }
+
+    hr {
+
+        &.dashed {
+            border-top-color: $border-grey;
+            border-top-style: dashed;
+        }
     }
 
     & aside .block {

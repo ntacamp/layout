@@ -34,7 +34,6 @@ module.exports = function(grunt) {
     },
     uglify: {
       options: {
-          banner: '<%= banner %>',
           sourceMap: true,
           sourceMapIncludeSources: true
       },
@@ -63,8 +62,7 @@ module.exports = function(grunt) {
     },
     cssmin: {
       options: {
-          keepSpecialComments: 0,
-          banner: '<%= banner %>',
+          keepSpecialComments: 0
       },
       dist: {
         files: {
@@ -83,7 +81,6 @@ module.exports = function(grunt) {
           '<%= meta.defaultPath %>/css/<%= pkg.name %>.css': '<%= meta.defaultPath %>/scss/<%= pkg.name %>.scss'
         },
         options: {
-          banner: '<%= banner %>',
           style: 'expanded',
           sourcemap: false
         }
