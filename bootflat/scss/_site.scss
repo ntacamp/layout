@@ -162,3 +162,51 @@ body > .sponsors {
         padding-bottom: 70px;
     }
 }
+.feed-list .feed-element {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        display: block;
+    }
+
+    .caption {
+        background: #333;
+        padding: 6px;
+
+        .author-name {
+            line-height: 15px;
+            font-size: 10px;
+            color: #fff;
+
+            span {
+                display: block;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 16px;
+                color: #ebebeb;
+            }
+        }
+
+        img {
+            float: left;
+            margin-right: 6px;
+            width: 38px;
+        }
+
+        p.message {
+            display: inline-block;
+            margin: 6px 0;
+            font-size: 14px;
+            font-weight: 300;
+            color: #ebebeb;
+        }
+    }
+
+    .main-img {
+        width: 100%;
+    }
+}

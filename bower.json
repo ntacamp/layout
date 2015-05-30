@@ -18,15 +18,15 @@
     "bootflat/img/*"
   ],
   "keywords": [
-	"mobile",
-	"html5",
-	"css3",
-	"scss",
-	"bootflat",
-	"bootstrap",
-	"flat",
-	"flat ui",
-	"ui"
+    "mobile",
+    "html5",
+    "css3",
+    "scss",
+    "bootflat",
+    "bootstrap",
+    "flat",
+    "flat ui",
+    "ui"
   ],
   "license": "MIT",
   "ignore": [
@@ -40,5 +40,9 @@
     "index.html",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "imagesloaded": "~3.1.8",
+    "masonry": "~3.3.0"
+  }
 }

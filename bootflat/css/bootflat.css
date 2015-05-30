@@ -2847,4 +2847,45 @@ body > .sponsors .container {
   padding-bottom: 70px;
   }
 
+.feed-list .feed-element {
+  margin-bottom: 20px;
+  }
+.feed-list .feed-element:last-child {
+  margin-right: 0;
+  }
+.feed-list .feed-element a {
+  display: block;
+  }
+.feed-list .feed-element .caption {
+  padding: 6px;
+  background: #333;
+  }
+.feed-list .feed-element .caption .author-name {
+  font-size: 10px;
+  line-height: 15px;
+  color: #fff;
+  }
+.feed-list .feed-element .caption .author-name span {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #ebebeb;
+  }
+.feed-list .feed-element .caption img {
+  float: left;
+  width: 38px;
+  margin-right: 6px;
+  }
+.feed-list .feed-element .caption p.message {
+  display: inline-block;
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ebebeb;
+  }
+.feed-list .feed-element .main-img {
+  width: 100%;
+  }
+
 /*# sourceMappingURL=bootflat.css.map */
