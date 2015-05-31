@@ -210,3 +210,11 @@ body > .sponsors {
         width: 100%;
     }
 }
+
+.talk-group {
+    .talk {
+        border-bottom: 1px solid $lightgray-dark;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+}
