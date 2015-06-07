@@ -213,8 +213,63 @@ body > .sponsors {
 
 .talk-group {
     .talk {
-        border-bottom: 1px solid $lightgray-dark;
+        border-bottom: 1px solid $indigo-color;
         padding-bottom: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+}
+
+.schedule {
+
+    h2 {
+        border-bottom: 4px solid $grapefruit-dark;
+        padding-bottom: 3px;
+        margin-bottom: 25px;
+    }
+
+    .track {
+        &.first {
+            background-color: lighten($lynch, 47%);
+        }
+        &.second {
+            background-color: lighten($lynch, 45%);
+        }
+        &.third {
+            background-color: lighten($lynch, 43%);
+        }
+        &.fourth {
+            background-color: lighten($lynch, 40%);
+        }
+    }
+
+    .talk {
+        text-align: center;
+        margin-bottom: 30px;
+        height: 200px;
+
+        h4 {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            border: 6px solid transparent;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            img {
+                border: 6px solid $grapefruit-light;
+            }
+        }
     }
 }
