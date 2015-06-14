@@ -2,6 +2,7 @@ $lynch:                #6C7A89;
 $indigo-color:         #264348;
 $jungle-green:         #26C281;
 $border-grey:          #CCC;
+$ocean-green:          #4DAF7C;
 
 body {
     margin-top: 53px;
@@ -250,11 +251,20 @@ body > .sponsors {
         text-align: center;
         margin-bottom: 50px;
         height: 200px;
+        font-size: 13px;
 
         h4 {
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: $darkgray-dark;
+        }
+
+        p {
+            color: $ocean-green;
         }
 
         img {
@@ -269,6 +279,10 @@ body > .sponsors {
         &:hover {
             img {
                 border: 6px solid $grapefruit-light;
+            }
+
+            & a {
+                text-decoration: underline;
             }
         }
     }
