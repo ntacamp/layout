@@ -267,15 +267,6 @@ body > .sponsors {
             color: $ocean-green;
         }
 
-        img {
-            max-width: 100%;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 6px solid transparent;
-            transition: all 0.5s;
-        }
-
         &:hover {
             img {
                 border: 6px solid $grapefruit-light;
@@ -286,4 +277,18 @@ body > .sponsors {
             }
         }
     }
+}
+
+.schedule .talk img,
+.talk-img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 6px solid transparent;
+    transition: all 0.5s;
+}
+
+.talk-img {
+    border: 6px solid $grapefruit-light;
 }

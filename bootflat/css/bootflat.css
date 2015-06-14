@@ -2901,7 +2901,15 @@ body > .sponsors .container {
 .schedule .talk p {
   color: #4daf7c;
   }
-.schedule .talk img {
+.schedule .talk:hover img {
+  border: 6px solid #ed5565;
+  }
+.schedule .talk:hover a {
+  text-decoration: underline;
+  }
+
+.schedule .talk img,
+.talk-img {
   width: 150px;
   max-width: 100%;
   height: 150px;
@@ -2909,11 +2917,9 @@ body > .sponsors .container {
   border-radius: 50%;
   transition: all .5s;
   }
-.schedule .talk:hover img {
+
+.talk-img {
   border: 6px solid #ed5565;
-  }
-.schedule .talk:hover a {
-  text-decoration: underline;
   }
 
 /*# sourceMappingURL=bootflat.css.map */
