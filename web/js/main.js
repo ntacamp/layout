@@ -14,11 +14,11 @@ Gumby.ready(function() {
 	});
 
 	// show random background
-	var num = Math.floor((Math.random() * 18) + 1);	
+	var num = Math.floor((Math.random() * 7) + 1);	
 	if (num < 10) {
 		num = '0' + num.toString();
 	}
-	var img = 'http://2015.notrollsallowed.com/img/background-0' + num + '.jpg';
+	var img = 'http://2015.notrollsallowed.com/images/background-0' + num + '.jpg';
 	$('body').css('background-image', 'url('+img+')');
 
 // Oldie document loaded
