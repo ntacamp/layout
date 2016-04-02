@@ -18,7 +18,7 @@ Gumby.ready(function() {
 	if (num < 10) {
 		num = '0' + num.toString();
 	}
-	var img = 'http://2016.notrollsallowed.com/img/background-0' + num + '.jpg';
+	var img = 'http://www.notrollsallowed.com/img/background-0' + num + '.jpg';
 	$('body').css('background-image', 'url('+img+')');
 
 // Oldie document loaded
